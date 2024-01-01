@@ -1,0 +1,99 @@
+.slider{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.slider .fundo{
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.slider .fundo.mostrar{
+    opacity: 1;
+}
+
+.fundo-rosa{
+    background-image: url(../images/imagem\ 1.png);
+}
+
+.fundo-verde{
+    background-image: url(../images/imagem\ 2.png);
+}
+
+.fundo-laranja{
+    background-image: url(../images/imagem\ 3.png);
+}
+
+.fundo-azul{
+    background-image: url(../images/imagem\ 4.png);
+}
+
+.seta-esquerda, .seta-direita{
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-esquerda{
+    transform: rotateY(180deg);
+    left: 4%;
+}
+
+.seta-direita{
+    right: 4%;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.content{
+    background-color: #fff;
+    padding: 65px 60px;
+    max-width: 620px;
+    max-height: 700px;
+    border-radius: 10px;
+    margin-left: 180px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 80px;
+}
+
+.texto{
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.saiba-mais{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.rosa{
+    color: #C50000;
+}
+
+.verde{
+    color: #D9DD10;
+}
+
+.laranja{
+    color: #A63A17;
+}
+
+.azul{
+    color: #10ACDD;
+}
